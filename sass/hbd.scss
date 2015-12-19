@@ -126,6 +126,38 @@ a{
   }
 }
 
+.green-candle{
+  background: #77DD77;
+}
+
+.pink-candle{
+  background: #FF6961;
+}
+
+.yellow-candle{
+  background: #ffcc00;
+}
+
+.orange-candle{
+  background: #FFB347;
+}
+
+.blue-candle{
+  background: #779ECB;
+}
+
+.purple-candle{
+  background: #B19CD9;
+}
+
+.grey-candle{
+  background: #A5D3CA;
+}
+
+.light-blue-candle{
+  background: #C0F7FE;
+}
+
 .candles{
   z-index: 20;
   position: absolute;
@@ -137,20 +169,20 @@ a{
   width: $candle-width;
   position: absolute;
   bottom: $cake-height - $candle-height + 2.5em;
-  left: 0; right: 0;
+  //left: 0; right: 0;
   margin: 0 auto;
   border-radius: 50% / 5%;
   
   animation: candles 10s 2s 2 alternate;
   
 
-  background: $candle-color;
+  /*
   box-shadow: -($candle-distance) 5em 0 0 nth($candle-list, 1),
     ($candle-distance) 5em 0 0 nth($candle-list, 2),
     -($candle-distance)*2 -2.5em 0 -3px nth($candle-list, 3),
     ($candle-distance)*2 -2.5em 0 -3px nth($candle-list, 4),
     -($candle-distance)*3 2em 0 -1px nth($candle-list, 5),
-    ($candle-distance)*3 2em 0 -1px nth($candle-list, 6);
+    ($candle-distance)*3 2em 0 -1px nth($candle-list, 6); */
 
   
     //top
@@ -165,13 +197,13 @@ a{
     height: 10px;
     border-radius: 50%;
     background: darken($candle-color, 10%);
-    
+    /*
     box-shadow: -($candle-distance) 5em 0 0 darken(nth($candle-list, 1), 10%),
       ($candle-distance) 5em 0 0 darken(nth($candle-list, 2), 10%),
       -($candle-distance)*2 -2.5em 0 -3px darken(nth($candle-list, 3), 10%),
       ($candle-distance)*2 -2.5em 0 -3px darken(nth($candle-list, 4), 10%),
       -($candle-distance)*3 2em 0 -1px darken(nth($candle-list, 5), 10%),
-      ($candle-distance)*3 2em 0 -1px darken(nth($candle-list, 6), 10%);
+      ($candle-distance)*3 2em 0 -1px darken(nth($candle-list, 6), 10%);*/
   }
 
   //flame
@@ -191,13 +223,14 @@ a{
     
     animation: flames 0.75s infinite alternate;
 
+    /*
     box-shadow: 0 0 0 1px lighten($color-flame, 10%),
       -($candle-distance) 5em 1px 0 $color-flame,
       ($candle-distance) 5em 1px 0 $color-flame,
       -($candle-distance)*2 -2.5em 1px 0 $color-flame,
       ($candle-distance)*2 -2.5em 1px 0 $color-flame,
       -($candle-distance)*3 2em 1px 0 $color-flame,
-      ($candle-distance)*3 2em 1px 0 $color-flame;
+      ($candle-distance)*3 2em 1px 0 $color-flame; */
   }
   
 }
