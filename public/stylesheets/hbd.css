@@ -101,6 +101,15 @@ a {
 .light-blue-candle {
   background: #C0F7FE; }
 
+.blue-yellow-candle {
+  background: #33FF33; }
+
+.skin-color-candle {
+  background: #FF9933; }
+
+.dark-pink-candle {
+  background: #FF66B2; }
+
 .candles {
   z-index: 20;
   position: absolute;
@@ -140,6 +149,7 @@ a {
       ($candle-distance)*3 2em 0 -1px darken(nth($candle-list, 6), 10%);*/ }
   .candles::after {
     content: '';
+    visibility: visible;
     position: absolute;
     top: -2em;
     right: 0;

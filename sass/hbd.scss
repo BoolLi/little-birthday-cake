@@ -157,6 +157,18 @@ a{
   background: #C0F7FE;
 }
 
+.blue-yellow-candle{
+  background: #33FF33;
+}
+
+.skin-color-candle{
+  background: #FF9933;
+}
+
+.dark-pink-candle{
+  background: #FF66B2;
+}
+
 .candles{
   z-index: 20;
   position: absolute;
@@ -209,6 +221,7 @@ a{
   //flame
   &::after{
     content: '';
+    visibility: visible;
     position: absolute;
     top: -($candle-width)*4/5;
     right: 0;
