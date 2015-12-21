@@ -169,6 +169,10 @@ a{
   background: #FF66B2;
 }
 
+.dark-yellow-candle{
+  background: #FFFF33;
+}
+
 .candles{
   z-index: 20;
   position: absolute;
@@ -244,6 +248,10 @@ a{
       ($candle-distance)*2 -2.5em 1px 0 $color-flame,
       -($candle-distance)*3 2em 1px 0 $color-flame,
       ($candle-distance)*3 2em 1px 0 $color-flame; */
+  }
+
+  &.no-flame::after{
+    visibility: hidden;
   }
   
 }
