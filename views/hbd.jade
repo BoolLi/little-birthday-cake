@@ -1,22 +1,49 @@
 extends layout
 
 block content
+  link(href='https://fonts.googleapis.com/css?family=Lobster', rel='stylesheet', type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600|Raleway:600', rel='stylesheet', type='text/css')
   link(rel='stylesheet', href='/stylesheets/hbd.css')
   script(type='text/javascript', src='https://code.jquery.com/jquery-2.1.4.min.js')
   script(type='text/javascript', src='/javascripts/hbd.js')
-  h1 Happy Birthday!
-  p Welcome to Li's website
+
+  .first-text
+    h1 Light all the candles!
+
+  .second-text
+    h1 And blow the candles!
+    .blow-button 
+      li#blow-candles-button
+        a.round.red(href='#')
+          | Blow
+          span.round But only after you make a wish!
+
+
+  .third-text
+    h1 Happy Birthday! May all your wishes come true! 
+
+
+  .hints
+    .hint-1
+      h3 Hint 1: Toggling a candle will also toggle its adjacent candles!
+
+    .hint-2
+      h3 Hint 2: You have 10 candles, and you can only toggle 3 candles at a time?! 
+
+    .hint-3
+      h3 Hint 3: You can alway refresh the page to restart!
+
+    .hint-4
+      h3 Hint 4: Sorry! I don't mean to confuse you too much.. Here is how I do it: hit candle 1, 4, 7 and 10 (counting from left to right) in order and you should be able to light them all up! 
 
   .cake
-    .candles.pink-candle#1(style='left:-55em; right:0em;')
-    .candles.green-candle#2(style='left:-45em; right:0em;')
-    .candles.yellow-candle#3(style='left:-35em; right:0em;')
-    .candles.blue-candle#4(style='left:-25em; right:0em;')
-    .candles.orange-candle#5(style='left:-15em; right:0em;')
-    .candles.purple-candle#6(style='left:-5em; right:0em;')
-    .candles.grey-candle#7(style='left:5em; right:0em;')
-    .candles.light-blue-candle#8(style='left:15em; right:0em;')
-    .candles.blue-yellow-candle#9(style='left:25em; right:0em;')
-    .candles.skin-color-candle#10(style='left:35em; right:0em;')
-    .candles.dark-pink-candle#11(style='left:45em; right:0em;')
-    .candles.dark-yellow-candle#12(style='left:55em; right:0em;')
+    .candles.pink-candle#1(style='left:-45em; right:0em;')
+    .candles.green-candle#2(style='left:-35em; right:0em;')
+    .candles.yellow-candle#3(style='left:-25em; right:0em;')
+    .candles.blue-candle#4(style='left:-15em; right:0em;')
+    .candles.orange-candle#5(style='left:-5em; right:0em;')
+    .candles.purple-candle#6(style='left:5em; right:0em;')
+    .candles.grey-candle#7(style='left:15em; right:0em;')
+    .candles.light-blue-candle#8(style='left:25em; right:0em;')
+    .candles.blue-yellow-candle#9(style='left:35em; right:0em;')
+    .candles.skin-color-candle#10(style='left:45em; right:0em;')
