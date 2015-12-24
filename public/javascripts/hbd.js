@@ -1,7 +1,4 @@
 $(function() {
-
-  
-
   var maxCandleNum = 10;
   var hintTime = 4000;
   var clickCount = 0;
@@ -62,7 +59,7 @@ $(function() {
   			$(".hint-3").fadeIn(hintTime, function() {
   				$(".hint-3").fadeOut(hintTime);
   			})
-  		} else if (clickCount == 50) {
+  		} else if (clickCount == 20) {
   			$(".hint-4").fadeIn(hintTime, function() {
   				$(".hint-4").fadeOut(hintTime);
   			})
